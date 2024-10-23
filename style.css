@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box; /* Устанавливаем полные ширину и высоту для всех элементов */
+    margin: 0; /* Убираем отступы для всех элементов */
+    padding: 0; /* Убираем внутренние отступы для всех элементов */
+}
+
+h1, h2 {
+    text-align: center; /* Центрируем заголовки */
+    padding-top: 20px; /* Отступ сверху для заголовков */
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(99, 2, 131);
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 32px;
+    color: rgb(77, 3, 141);
+    font-weight: bolder;
+}
+
+html, body {
+    height: 100%; /* body занимает всю высоту */
+    width: 100%; /* body занимает всю ширину */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Упрощаем структуру для выравнивания футера */
+    background-color: rgb(189, 166, 217);
+    position: relative; /* Для использования абсолютного позиционирования фона */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Используем фиксированное позиционирование */
+    top: 130px; /* Отступ сверху для фона */
+    left: 0;
+    width: 100%; /* Заполнение по ширине */
+    height: calc(100%); /* Уменьшаем высоту, чтобы фон не доходил до верхней части страницы */
+    background-image: url('./Img/maxresdefaultPHP.jpg'); /* Проверьте правильность пути */
+    background-size: cover; /* Масштабируем изображение на всю страницу */
+    background-position: center center; /* Центрируем изображение */
+    opacity: 0.6; /* Прозрачность изображения */
+    z-index: -1; /* Фон ниже остальных элементов */
+}
+
+.wrapper {
+    flex: 1; /* Убедитесь, что .wrapper занимает оставшееся пространство */
+    display: flex; /* Используем flex для расположения контента */
+    flex-direction: column; /* Вертикальное выравнивание */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    justify-content: center; /* Центрируем элементы по вертикали */
+}
+
+.stripe-footer {
+    background: #541964; /* Цвет фона футера */
+    color: #bd47bf; /* Цвет текста футера */
+    text-align: center; /* Центрируем текст */
+    padding: 0.4rem; /* Отступ футера */
+    width: 100%; /* Футер занимает всю ширину */
+    margin-top: auto; /* Прижимаем футер к низу страницы */
+    position: relative; /* Футер поверх фона */
+    z-index: 1; /* Устанавливаем выше фона */
+}
