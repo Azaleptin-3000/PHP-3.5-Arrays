@@ -7,7 +7,7 @@ foreach ($friends as $friend) {
     echo $friend . "<br>";
 }
 
-// Пунктирная линия после вывода всех имен
+// Разделительная пунктирная линия после задания
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
@@ -21,7 +21,7 @@ $value = $numbers[2];
 // Вывод значения на экран
 echo "Элемент с индексом 2: " . $value;
 
-// Пунктирная линия после вывода всех имен
+// Разделительная пунктирная линия
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
@@ -50,6 +50,7 @@ foreach ($numbers as $number) {
         echo $number . "<br>";
     }
 }
+// Разделительная пунктирная линия
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
@@ -63,6 +64,7 @@ $sum = array_sum($numbers);
 // Вывод суммы на экран
 echo "Сумма чисел: " . $sum;
 
+// Разделительная пунктирная линия
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
@@ -126,6 +128,7 @@ function updateQuantity(&$products, $name, $newQuantity) {
 updateQuantity($products, "Яблоки", 50);
 showProducts($products); // вывод обновленного списка товаров
 
+// Разделительная пунктирная линия
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
@@ -180,6 +183,7 @@ function findTopStudent($students) {
 // Вызов функции для нахождения студента с самым высоким средним баллом
 findTopStudent($students);
 
+// Разделительная пунктирная линия
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
@@ -224,6 +228,7 @@ function findDuplicates($array) {
 // Вызов функции для поиска дубликатов
 findDuplicates($numbers);
 
+// Разделительная пунктирная линия
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
@@ -272,6 +277,7 @@ sortArray($mergedArray);
 // Вывод отсортированного массива
 echo "Отсортированный массив: " . implode(", ", $mergedArray) . "<br>";
 
+// Разделительная пунктирная линия
 echo "<div style='border-bottom: 1px dashed gray; padding: 5px; width: 20%; margin-right: auto; margin-bottom: 15px;'></div>";
 ?>
 
